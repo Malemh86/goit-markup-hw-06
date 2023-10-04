@@ -11,37 +11,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header__hero">
+    <header class="header">
       <nav class="container navigation__container section__nav">
-        <ul class="p-0 nav__options list">
+        <ul class="p-0 header__links list">
           <li><a href="index.html" class="hero_navigation link">WebStudio</a></li>
-          <li class="nav_item"><a class="nav_link link" href="index.html">Estudio</a></li>
-          <li class="nav_item">
-            <a class="nav_link link current" href="portafolio.html">Portafolio</a>
+          <li class="header__item">
+            <a class="header__link link" href="index.html">Estudio</a>
           </li>
-          <li class="nav_item"><a class="nav_link link" href="#">Contacto</a></li>
+          <li class="header__item">
+            <a class="header__link link current" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="header__item"><a class="header__link link" href="#">Contacto</a></li>
         </ul>
 
         <ul class="nav__contacts list">
           <li class="nav_contact">
             <ul class="mail_list">
-            <li>
-              <a class="nav_link link" href="mailto:info@devstudio.com">
-                <svg width="16" height="12"><use href="./images/icons.svg#icon-sobre"/></svg>
-              info@devstudio.com
-              </a>
-            </li>
+              <li>
+                <a class="header__link link" href="mailto:info@devstudio.com">
+                  <svg width="16" height="12"><use href="./images/icons.svg#icon-sobre" /></svg>
+                  info@devstudio.com
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav_contact">
             <ul class="tel_list">
               <li>
-                <a class="nav_link link" href="tel:+525555296600">
-                <svg width="10" height="16"><use href="./images/icons.svg#icon-telfono"/></svg>
-                +525555296000
-              </a>
-            </li>
-            </ul> 
+                <a class="header__link link" href="tel:+525555296600">
+                  <svg width="10" height="16"><use href="./images/icons.svg#icon-telfono" /></svg>
+                  +525555296000
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -226,7 +228,7 @@
         </ul>
       </section>
     </main>
-    
+
     <footer class="last_part">
       <div class="last_part container">
         <div>
@@ -237,20 +239,58 @@
                 <p class="lastpart_address">Calz. Ticomán 500, Ciudad de</p>
                 <p class="lastpart_address">México CDMX, México</p>
               </li>
-              <li><a class="lastpart_info link" href="mailto:info@example.com">info@example.com</a></li>
+              <li>
+                <a class="lastpart_info link" href="mailto:info@example.com">info@example.com</a>
+              </li>
               <li><a class="lastpart_info link" href="tel:+525555296600">+525555296000</a></li>
             </ul>
           </address>
-      </div>
-      <div class="section__socialmedia">
-        <h2 class="socialmedia__tittle">ENCUENTRENOS EN</h2>
-        <ul class="icon__list list p-0">
-          <li class="item__team"><a class="item__team"><svg width="20" height="20"><use href="./images/icons.svg#icon-instagram"/></svg></a></li>
-          <li class="item__team"><a class="item__team"><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"/></svg></a></li>
-          <li class="item__team"><a class="item__team"><svg width="20" height="20"><use href="./images/icons.svg#icon-facebook"/></svg></a></li>
-          <li class="item__team"><a class="item__team"><svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin"/></svg></a></li>
-        </ul>
-      </div>
+        </div>
+        <div class="section__socialmedia">
+          <h2 class="socialmedia__tittle">ENCUENTRENOS EN</h2>
+          <ul class="icon__list list p-0">
+            <li class="item__team">
+              <a class="item__team"
+                ><svg width="20" height="20"><use href="./images/icons.svg#icon-instagram" /></svg
+              ></a>
+            </li>
+            <li class="item__team">
+              <a class="item__team"
+                ><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter" /></svg
+              ></a>
+            </li>
+            <li class="item__team">
+              <a class="item__team"
+                ><svg width="20" height="20"><use href="./images/icons.svg#icon-facebook" /></svg
+              ></a>
+            </li>
+            <li class="item__team">
+              <a class="item__team"
+                ><svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="tittle__suscription">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
+          <form>
+            <label>
+              <div class="susc__group"></div>
+              <input
+                class="susc__input"
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+              />
+              <button class="susc__button" type="submit">
+                Suscríbase
+                <svg class="susc__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-enviar" />
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
